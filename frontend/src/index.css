@@ -1,0 +1,49 @@
+
+/* ── Reset e variáveis globais ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary:    #0f0f14;  /* fundo geral — quase preto */
+  --bg-secondary:  #111118;  /* navbar e superfícies elevadas */
+  --bg-card:       #0A0A12;  /* cards afundados */
+  --bg-elevated:   #16161F;  /* card de detalhes — superfície de referência */
+  --accent-blue:   #2D7FF9;  /* azul vibrante — destaques e nome */
+
+  --border-color:  rgba(255, 255, 255, 0.06);   /* bordas sutis */
+  --border-strong: rgba(255, 255, 255, 0.10);   /* bordas com mais presença */
+
+  --text-primary:   #E8E8F0;  /* texto principal */
+  --text-secondary: #6B6B7A;  /* texto secundário */
+  --text-muted:     #3A3A4A;  /* labels, hints, IDs */
+
+  --transition: all 0.2s ease;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove outline padrão e adiciona o nosso */
+*:focus {
+  outline: none;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
