@@ -5,6 +5,9 @@ Sistema completo de autenticação desenvolvido com foco em **boas práticas de 
 > Este projeto foi desenvolvido com objetivo de aprendizado, com ênfase no desenvolvimento backend — arquitetura de APIs REST, autenticação segura, modelagem de dados e segurança em camadas.
 
 ---
+## Deploy
+
+https://painel.jotavz.me
 
 ## Tecnologias Utilizadas
 
@@ -246,6 +249,7 @@ MONGODB_URI=mongodb://localhost:27017/accesscontrol
 JWT_SECRET=gere_um_secret_forte_com_64_bytes
 JWT_EXPIRES_IN=7d
 NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
 ```
 
 > Para gerar um JWT_SECRET seguro:
